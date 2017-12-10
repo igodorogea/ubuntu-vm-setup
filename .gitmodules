@@ -1,0 +1,3 @@
+[submodule "sublime-configs"]
+	path = sublime-configs
+	url = git@github.com:igodorogea/sublime-configs.git
