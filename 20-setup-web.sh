@@ -26,7 +26,8 @@ wget https://packagecontrol.io/Package%20Control.sublime-package -O "$HOME/.conf
 git submodule init
 git submodule update
 # don't promt for confirmation when overwrite
-rsync -qI --exclude="README.md" sublime-configs ~/.config/sublime-text-3/Packages/User/
+rsync -vr --exclude="README.md" --exclude=".git" sublime-configs/ ~/.config/sublime-text-3/Packages/User/
 
 # install fonts
-rsync -qI fonts ~/.fonts/
+rsync -vr fonts/ ~/.fonts/
+sudo fc-cache -f -v
